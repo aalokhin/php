@@ -1,0 +1,155 @@
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #748093;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.authorization {
+	float: left;
+}
+
+.basket {
+	float: right;
+}
+
+.categories {
+	float: left;
+	margin-left: 40px;
+}
+
+.header {
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
+.button {
+	display: block;
+	padding: 10px;
+	background-color: black;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	border: 1px solid black;
+}
+
+.button:hover {
+	border: 1px solid white;
+}
+
+.main_container {
+	padding: 0 10px;
+}
+
+.products {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products .item {
+    display: flex;
+    flex-basis: 15%;
+    flex-direction: column;
+    justify-content: inherit;
+    background-color: #fff;
+    border: 2px solid #000;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.products .item_img img {
+	width: 100%;
+	display: block;
+}
+
+.products .item_title {
+	font-weight: 900;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown_list {
+	width: 100%;
+	position: absolute;
+	left: -5000px;
+	top: -5000px;
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.dropdown_list .link {
+	display: block;
+	text-decoration: none;
+	background-color: #000;
+	color: #fff;
+	border: 1px solid white;
+}
+
+.dropdown:hover .dropdown_list {
+	display: block;
+	top: 40px;
+	left: 0;
+}
+
+.dropdown_list .link:hover {
+	background-color: #666;
+}
+
+.dropdown_list .link_checked {
+	background-color: yellow;
+}
+
+.dropdown_list .link_checked:hover {
+	background-color: blue;
+}
+
+.error_block {
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 2px solid #000;
+	background-color: #fff;
+}
+
+.ub {
+	cursor: default;
+}
+
+legend {
+	font-weight: 900;
+	font-size: 20px;
+	margin: 10px 0;
+}
+input {
+	margin-bottom: 10px;
+}
+@media only screen and (max-width: 1200px)
+{
+	.item {
+		flex-basis: 40% !important;
+	}
+}
